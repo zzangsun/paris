@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>파리바게트</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/script.js"></script>
+   <!-- 화면을 변경을 할시 메뉴바가 오류로 인하여 작동이 안되다가 f5눌러야 작동이 됩니다.-->
+<!-- 스크롤 할때 헤더가 에러로 계속 수치가 안 맞게 바뀝니다... f5 눌러야 설정해 두었던 수치로 바뀝니다 -->
+   
+</head>
+
+<body>
+    <div id="container">
+        <header class="header scroll">
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="">
+                </div>
+                <div class="menus">
+                    <div class="menu">
+                        <a href="#none"><li>매장정보</li></a>
+                        <a href="#none"><li>상품안내</li></a>
+                        <a href="#none"><li>주문정보</li></a>
+                        <a href="#none"><li>이벤트</li></a>
+                    </div>
+                    <div class="menu_mobile">
+                        <input type="checkbox" id="trigger" style="display:none;">
+                        <label for="trigger">
+                            <span></span>
+                            <span></span>
+                        </label>
+                        <div class="menu-bar-box">
+                            <ul class="menu-bar">
+                                <div class="menu-text">
+                                    <li>
+                                        <a href="#none" class="menu-t">Shop</a>
+                                    </li>
+                                    <li>
+                                        <a href="#none" class="menu-t">Delivery</a>
+                                    </li>
+                                    <li>
+                                        <a href="#none" class="menu-t">Pick up</a>
+                                    </li>
+                                    <li>
+                                        <a href="#none" class="menu-t">Location</a>
+                                    </li>
+                                </div>
+                                <div class="sub-menu-box">
+                                    <div class="sub-menu">
+                                        <h3>More</h3>
+                                        <a href="#none"><p>매장정보</p></a><a href="#none"><p>FAQs</p></a>
+                                    </div>
+                                    <div class="sub-menu">
+                                        <h3>Sns</h3>
+                                        <a href="#none"><p>Instargram</p></a>
+                                        <a href="#none"><p>Facebook</p></a>
+                                    </div>
+                                    <div class="sub-menu">
+                                        <h3>Contact Us</h3>
+                                        <a href="#none"><p>고객센터</p></a>
+                                        <a href="#none"><p>고객칭찬</p></a>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                 </div>
+                </div>
+                <div class="cart">
+                    <a href="#noene"><li>Cart</li></a>
+                </div>
+        </header>
+        <section class="sec-1">
+            <div class="wrap">
+                <!-- <div class="main-img"></div> -->
+                <div class="main-text">
+                    <p>누가 먹어도 행복한 빵</p>
+                    <p>남녀노소 할 것 없이 누가 먹어도 행복할 수 있는 빵을 만드는 것, 공정한 맛과 행복을 전하기 위해 
+                        파리바게트는 더 노력하겠습니다
+                    </p>
+                </div>
+            </div>
+        </section>
+       <section class="sec-2">
+         <div class="wrap">
+              <div class="head-text">
+                <h3>Signature Menu</h3>
+              </div>
+              <div class="menu-img">z
+                  <div class="menu-1 signature">
+                     <div class="front">
+                        <img src="./img/Signature Menu-1.png" alt="">
+                     </div>
+                     <div class="back">
+                        <img src="./img/sec-2_cake.jpg" alt="">
+                       </div>
+                     <p>정통 파운드케익</p>
+                  </div>
+                  <div class="menu-2 signature">
+                     <div class="front"><img src="./img/Signature Menu-2.png" alt=""></div>
+                     <div class="back"><img src="./img/sec-2 sand.png" alt=""></div>
+                     <p>파리의 토스트</p>
+                   </div>
+                  <div class="menu-3 signature">
+                    <div class="front"> <img src="./img/Signature Menu-3.png" alt=""></div>
+                    <div class="back">
+                        <img src="./img/sec-2_cass.jpg" alt="">
+                    </div>
+                     <p>명가명품 우리벌꿀 카스테라</p>
+                  </div>
+              </div>
+         </div>
+         <div class="m_section">
+            <div class="head-text">
+                <h3>Signature Menu</h3>
+            </div>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                        <div class="swiper-slide signature">
+                           <div class="front">
+                              <img src="./img/Signature Menu-1.png" alt="">
+                           </div>
+                           <div class="back">
+                              <img src="./img/sec-2_cake.jpg" alt="">
+                             </div>
+                           <p>정통 파운드케익</p>
+                        </div>
+                        <div class="swiper-slide signature">
+                           <div class="front"><img src="./img/Signature Menu-2.png" alt=""></div>
+                           <div class="back"><img src="./img/sec-2 sand.png" alt=""></div>
+                           <p>파리의 토스트</p>
+                         </div>
+                        <div class="swiper-slide signature">
+                          <div class="front"> <img src="./img/Signature Menu-3.png" alt=""></div>
+                          <div class="back">
+                              <img src="./img/sec-2_cass.jpg" alt="">
+                          </div>
+                           <p>명가명품 우리벌꿀 카스테라</p>
+                        </div>
+               </div>
+               <div class="slide-icon">
+                <div class="icon-l slide swiper-button-prev">
+                    <img src="./img/slide-l.png" alt="">
+                </div>
+                <div class="icon-r slide swiper-button-next">
+                    <img src="./img/slide-r.png" alt="">
+                </div>
+             </div>
+               <!-- <div class="swiper-pagination"></div> -->
+            </div>    
+         </div>
+       </section>
+       <section class="sec-3">
+         <div class="wrap">
+             <div class="top-text">
+                 <div class="main-text">
+                    <p> 1988년에 론칭한 파리바게뜨는 국내에 유럽풍 베이커리
+                        문화를 처음 소개하며 대한민국의 베이커리 식문화를 선도하고 있습니다.</p>
+                 </div>
+                 <div class="sub-text">
+                    <p>파리바게뜨는 일상의 소중함을 언제나 기억합니다.</p>
+                 </div>
+             </div>
+             <div class="big-img">
+                 <img src="./img/big-img.png" alt="">
+             </div>
+             <div class="bottom-text">
+                 <div class="main-text">
+                    <p>앞으로도 항상 고객의 곁에서 매일의 기대와 매일의 가치를 담아 빵을 반죽하고 구울 것입니다.</p>
+                 </div>
+                 <div class="botton">
+                    <a href="#none"><p>더 알아보기</p></a>
+                 </div>
+             </div>
+         </div>
+       </section>
+       <section class="sec-4">
+        <div class="wrap">
+            <div class="left-box">
+                <div class="main-text up">
+                    <p>파리바게뜨는 원재료의 안정성 확보부터안전하게 식품을 생산 · 공급하는 것을 최우선으로 노력하고 있습니다</p>
+                </div>
+                <div class="main-text down">
+                    <p>파리바게뜨는 보다 더 안전한 품질 경영을 위해 점포 위생 관리에도 힘 쓰고 있습니다</p>
+                </div>
+            </div>
+            <div class="right-box">
+                <div class="m-text"> <p>파리바게뜨는 원재료의 안정성 확보부터안전하게 식품을 생산 · 공급하는 것을 최우선으로 노력하고 있습니다</p></div>
+                <div class="right-img">
+                    <img src="./img/right-img.png" alt="">
+                </div>
+                <div class="m-text"><p>파리바게뜨는 보다 더 안전한 품질 경영을 위해 점포 위생 관리에도 힘 쓰고 있습니다</p></div>
+            </div>
+        </div>
+       </section>
+       <!-- sec-5 -->
+       <section class="sec-5">
+         <div class="wrap">
+             <div class="head">
+                <img src="./img/sec5-head.png" alt="">
+             </div>
+             <div class="story">
+                <div class="story-img">
+                    <div class="front">
+                        <img src="./img/psg.jpg" alt="">
+                    </div>
+                    <div class="back">
+                        <div class="text"><p>‘파리’로 하나되다</p></div>
+                        <li>국내 기업 중 최초로 프랑스 인기 축구 구단인 ‘파리 생제르맹(Paris Saint-Germain)’과
+                             공식 파트너십을 체결했습니다. 파리바게뜨는 이번 파트너십을 기점으로 글로벌 사업 강화
+                             에 발맞춘 스포츠 마케팅을 본격적으로 전개할 예정입니다.</li>
+                    </div>
+                </div>
+                <div class="story-img">
+                    <div class="front">
+                        <img src="./img/apple.webp" alt="">
+                    </div>
+                    <div class="back">
+                        <div class="text"><p>애플페이 상륙</p></div>
+                        <li>매장에서 애플페이로 결제 시 SPC 통합 멤버십 서비스 ‘해피포인트’가 자동 적립된다. 현대카드 앱을 업데이트한 후, 해피포인트 멤버십과 연동만 하면 결제 시 해피포인트가 자동으로 적립되는 방식이다.
+                        </li>
+                    </div>
+                </div>
+                <div class="story-img">
+                    <div class="front">
+                        <img src="./img/sale.jpg" alt="">
+                    </div>
+                    <div class="back">
+                        <div class="text"><p>행복상생 프로젝트</p></div>
+                        <li>경북 경산과 파리바게뜨가 만났다!
+                            행복상생 프로젝트 [파리바게뜨 X 경산 대추]
+                            잘 익은 가을 대추를 활용해 건강한 단맛을 자랑하는
+                            경산 대추 선물세트 4종을 지금 파바에서 만나보세요!                   
+                           </li>
+                    </div>
+                </div>
+                <div class="story-img">
+                    <div class="front">
+                        <img src="./img/coffe.jpg" alt="">
+                     
+                    </div>
+                    <div class="back">
+                        <div class="text"><p>트렌드는 무산소 발효</p></div>
+                        <li> ‘무산소 발효’는 커피 가공 과정에 와인의 발효 방식을 적용한 것이다. 수확한 생두를 산소가 차단된 공간에서 장시간 발효하는 방법이다. 발효 공정을 거치면서 기존 커피보다 향미가 더 다양하고 풍부해진다.
+                            파리바게뜨에서 만나 볼 수 있습니다
+                        </li>
+                    </div>
+                </div>
+             </div>
+         </div>
+       </section>
+       <section class="sec-6">
+        <div class="video_flex">
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/1htdY7WMm44?si=82VjH2oyqWCaBjPU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>    
+        </div>
+       </section>
+       <footer class="footer">
+        <div class="wrap">
+            <div class="footer-up">
+                <div class="shop interval">
+                    <div class="text">
+                        <p>Shop</p>
+                    </div>
+                    <div class="s-text">
+                        <a href="#none"><p>딜리버리</p></a>
+                        <a href="#none"><p>픽업</p></a>
+                        <a href="#none"><p>매장정보</p></a>
+                    </div>
+                </div>
+                <div class="sns interval ">
+                    <div class="text">
+                        <p>Sns</p>
+                    </div>
+                    <div class="s-text"> 
+                        <a href="#none"><p>Instargram</p></a>
+                        <a href="#none"><p>Facebook</p></a>
+                        <a href="#none"><p>Youtube</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-down">
+                <div class="contact interval">
+                    <div class="text"><p>Contact Us</p></div>
+                    <div class="s-text"> 
+                        <a href="#none"><p>고객센터</p></a>
+                        <a href="#none"><p>080-731-2027</p></a>
+                        <a href="#none"><p>평일 09:00 - 17:00 (점심 12:00 - 13:00)</p></a>
+                        <a href="#none"><p>고객칭찬</p></a>
+                    </div>
+                </div>
+                <div class="spc interval">
+                    <img src="./img/spc.logo.svg" alt="">
+                </div>
+            </div>
+        </div>
+       </footer>
+    </div>
+</body>
+</html>
